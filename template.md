@@ -17,15 +17,10 @@
 
 ### Explanation
 
-设定定义 target 是在一个在左闭右闭的区间里，也就是[left, right] (这个很重要非常重要)。
-区间的定义决定了二分法的代码应该如何写，因为决定了区间的边界处理方式：
 
 1. **While Loop Condition**: 
-   - `while (left <= right)` 要使用 <=, 因为 left == right 是有意义的，所以使用 <=
 
 2. **Middle Element Check**:
-   - If `nums[middle] > target`:
-     - Update `right` to `middle - 1`, 因为当前这个 `nums[middle]` 一定不是 target, 那么接下来要查找的左区间结束下标位置就是 `middle - 1`
 
 ### Code Implementation
 
